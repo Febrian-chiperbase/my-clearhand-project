@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "project_clearhand_backend": {
+      "main": "src/project_clearhand_backend/main.mo",
+      "type": "motoko"
+    },
+    "project_clearhand_frontend": {
+      "dependencies": [
+        "project_clearhand_backend"
+      ],
+      "source": [
+        "src/project_clearhand_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "project_clearhand_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
